@@ -55,7 +55,7 @@ const SubmitButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #0056b3;
+  background-color: #ffb6c1;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -65,7 +65,7 @@ const SubmitButton = styled.button`
     border: 4px solid #ccc;
     border-radius: 5px;
     transition: border 0.2s ease;
-    background-color: #004494;
+    background-color: #ffc0cb;
   }
 `
 
@@ -184,7 +184,9 @@ export const LoginForm: React.FC<{}> = () => {
           />
         </InputWrapper>
       </InputWithTooltip>
-      <SubmitButton type="submit">Login</SubmitButton>
+      <SubmitButton type="submit" aria-hidden="true">
+        Login
+      </SubmitButton>
       <ErrorMessage
         visible={error}
         aria-description="login status"
