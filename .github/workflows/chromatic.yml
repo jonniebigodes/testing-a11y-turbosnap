@@ -18,4 +18,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           # onlyChanged: true
-          onlyStoryNames: "Components/Avatar/*"
+          # onlyStoryNames: "Components/Avatar/*"
+          onlyStoryFiles: "./components/AvatarList/*.stories.tsx"

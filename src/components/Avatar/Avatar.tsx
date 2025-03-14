@@ -1,4 +1,4 @@
-import { FC, ComponentProps } from 'react'
+import { FC } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
 // Import Icon but replace glow with our own definition
