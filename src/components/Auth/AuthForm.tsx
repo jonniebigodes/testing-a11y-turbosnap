@@ -184,9 +184,7 @@ export const LoginForm: React.FC<{}> = () => {
           />
         </InputWrapper>
       </InputWithTooltip>
-      <SubmitButton type="submit" aria-hidden="true">
-        Login
-      </SubmitButton>
+      <SubmitButton type="submit">Login</SubmitButton>
       <ErrorMessage
         visible={error}
         aria-description="login status"
