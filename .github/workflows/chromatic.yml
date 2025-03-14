@@ -19,4 +19,4 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           # onlyChanged: true
           # onlyStoryNames: "Components/Avatar/*"
-          onlyStoryFiles: "./components/AvatarList/*.stories.tsx"
+          onlyStoryFiles: "./src/components/AvatarList/*.stories.tsx"

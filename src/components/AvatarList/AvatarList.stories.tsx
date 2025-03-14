@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { AvatarList } from './AvatarList';
+import { AvatarList } from './AvatarList'
 
 const meta = {
-  title: 'Design System/AvatarList',
+  title: 'Components/AvatarList',
   component: AvatarList,
   tags: ['autodocs'],
-} satisfies Meta<typeof AvatarList>;
+} satisfies Meta<typeof AvatarList>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Short: Story = {
   args: {
@@ -26,21 +26,21 @@ export const Short: Story = {
       },
     ],
   },
-};
+}
 
 export const SmallSize: Story = {
   args: {
     ...Short.args,
     size: 'small',
   },
-};
+}
 
 export const Loading: Story = {
   args: {
     ...Short.args,
     loading: true,
   },
-};
+}
 
 export const Ellipsized: Story = {
   args: {
@@ -58,13 +58,13 @@ export const Ellipsized: Story = {
       },
     ],
   },
-};
+}
 
 export const BigUserCount: Story = {
   args: {
     users: Ellipsized.args?.users ?? [],
     userCount: 100,
   },
-};
+}
 
-export const Empty: Story = {};
+export const Empty: Story = {}
